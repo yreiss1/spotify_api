@@ -9,6 +9,7 @@ part 'response.g.dart';
 final class Artist {
   final String id;
   final String name;
+  final List<String> genres;
 
   /// The popularity of the artist.
   ///
