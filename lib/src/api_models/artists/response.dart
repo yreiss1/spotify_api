@@ -10,6 +10,7 @@ final class Artist {
   final String id;
   final String name;
   final List<String> genres;
+  final List<Map> images;
 
   /// The popularity of the artist.
   ///
@@ -18,13 +19,12 @@ final class Artist {
   /// The artist's popularity is calculated from the popularity of all the
   /// artist's tracks.
   final double? popularity;
-
-  Artist({
-    required this.id,
-    required this.name,
-    required this.genres,
-    required this.popularity,
-  });
+  Artist(
+      {required this.id,
+      required this.name,
+      required this.genres,
+      required this.popularity,
+      required this.images});
 
   factory Artist.fromJson(Json json) => _$ArtistFromJson(json);
 
